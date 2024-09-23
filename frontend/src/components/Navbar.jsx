@@ -3,11 +3,11 @@ import {
   Container,
   Flex,
   HStack,
-  Link,
   Text,
   useColorMode,
 } from "@chakra-ui/react";
-import { FaPlusCircle } from "react-icons/fa";
+import { PlusSquareIcon } from "@chakra-ui/icons";
+import { Link } from "react-router-dom";
 
 export default function NavBar() {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -36,7 +36,7 @@ export default function NavBar() {
         <HStack spacing={2} alignItems={"center"}>
           <Link to={"/create"}>
             <Button>
-              <FaPlusCircle />
+              <PlusSquareIcon fontSize={20} />
             </Button>
           </Link>
           <Button onClick={toggleColorMode}>
